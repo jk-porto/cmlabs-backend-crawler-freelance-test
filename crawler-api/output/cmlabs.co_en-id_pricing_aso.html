@@ -6371,7 +6371,7 @@ src="https://www.facebook.com/tr?id=977655943180723&ev=PageView&noscript=1"
                     $('#search-app-input').val(app.name);
                     $.ajax({
                         type: "GET",
-                        url: `https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed?category=ACCESSIBILITY&category=BEST_PRACTICES&category=PERFORMANCE&key=AIzaSyDjg7PenszK_cEZfg4tzvOlKFmnufwxVLs&strategy=MOBILE&url=${url}`,
+                        url: `https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed?category=ACCESSIBILITY&category=BEST_PRACTICES&category=PERFORMANCE&key={GOOGLE_SECRET_KEY}&strategy=MOBILE&url=${url}`,
                         beforeSend: function() {
                             if (platform == "android") {
                                 $('.android-mockup').hide()
